@@ -1,38 +1,122 @@
-.App {
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+  box-shadow: 0px 0px 10px 2px gray;
+  width: 80%;
+  height: 100%;
+  margin: auto;
+}
+.container header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.container header a {
+  text-decoration: none;
+  font-size: 40px;
+  font-family: "Caveat", cursive;
+  color: black;
+}
+.container header ul {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  padding: 10px;
+}
+.container header ul li {
+  list-style-type: none;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  gap: 30px;
+}
+.container header ul li a {
+  text-decoration: none;
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+  font-size: 16px;
+  color: grey;
+  transition: all 0.5s linear;
+}
+.container header ul li a:hover {
+  color: black;
+}
+.container .projectBody {
+  margin: 50px auto;
+  display: grid;
+  grid-template-columns: 260px 260px 260px;
+  gap: 20px;
+  position: relative;
+}
+.container .projectBody .box {
+  background-color: rgba(255, 255, 255, 0.8);
+  font-size: 30px;
   text-align: center;
 }
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.container .projectBody .box img {
+  width: 100%;
+  height: 100%;
 }
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.container .projectBody .one {
+  height: 270px;
 }
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.container .projectBody .two {
+  height: 310px;
+}
+.container .projectBody .three {
+  height: 270px;
+}
+.container .projectBody .four {
+  height: 270px;
+  position: relative;
+  top: -40px;
+}
+.container .projectBody .five {
+  height: 310px;
+}
+.container .projectBody .six {
+  height: 270px;
+  position: relative;
+  top: -40px;
+}
+.container .projectBody .seven {
+  height: 280px;
+  position: relative;
+  top: -60px;
+}
+.container .projectBody .eight {
+  height: 310px;
+}
+.container .projectBody .nine {
+  height: 270px;
+  position: relative;
+  top: -60px;
+}
+.container footer {
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 13px;
 }
-
-.App-link {
-  color: #61dafb;
+.container footer .up {
+  padding: 10px;
 }
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.container footer .down {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  gap: 10px;
 }
+.container footer .down a {
+  color: black;
+}/*# sourceMappingURL=app.css.map */
